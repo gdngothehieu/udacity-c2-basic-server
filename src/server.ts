@@ -36,6 +36,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
           deleteLocalFiles([response]);
         });
       });
+      res.status(200).send("Successfully filtered image");
     } else {
       res.status(404).send("Please send the correct image_url");
     }
